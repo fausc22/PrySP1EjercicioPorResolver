@@ -22,8 +22,8 @@ namespace SP1EjercicioPorResolver
             this.Hide(); //oculta el formulario
             frmMain f = new frmMain(); //crea el formulario
             f.Text = lblLogo.Text;
-            f.ShowDialog();
-            this.Show();
+            f.ShowDialog(); //visualiza y ejecuta el formulario nuevo
+            this.Show(); //visualiza nuevamente
         
         }
     }

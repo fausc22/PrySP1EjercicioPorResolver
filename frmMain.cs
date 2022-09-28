@@ -21,10 +21,11 @@ namespace SP1EjercicioPorResolver
         {
 
         }
+        // declaro variable intentos 
         int intentos = 0;
         private void btnAceptar_Click(object sender, EventArgs e)
         {
-            //1
+            //primer usuario
             if (txtUsuario.Text == "Adm" && txtContrasenia.Text == "@1a")
             {
                 if (LstModulo.Text == "ADM" || LstModulo.Text == "COM" || LstModulo.Text == "VTA")
@@ -37,7 +38,7 @@ namespace SP1EjercicioPorResolver
 
             }
             else
-            {   //2
+            {   //segundo usuario
                 if (txtUsuario.Text == "John" && txtContrasenia.Text == "*2b")
                 {
                     if (LstModulo.Text == "SIST")
@@ -48,7 +49,7 @@ namespace SP1EjercicioPorResolver
 
                 }
                 else
-                {   //3
+                {   //tercer usuario
                     if (txtUsuario.Text == "Ceci" && txtContrasenia.Text == "*@3c")
                     {
                         if (LstModulo.Text == "ADM" || LstModulo.Text == "VTA")
@@ -60,7 +61,7 @@ namespace SP1EjercicioPorResolver
 
                     }
                     else
-                    {   //4
+                    {   //cuarto usuario
                         if (txtUsuario.Text == "God" && txtContrasenia.Text == "*@#4d")
                         {
                             if (LstModulo.Text == "ADM" || LstModulo.Text == "COM" || LstModulo.Text == "VTA" || LstModulo.Text == "SIST")
@@ -73,7 +74,7 @@ namespace SP1EjercicioPorResolver
                         }
                         else
                         {
-                            intentos++;
+                            intentos++; //va sumando los intentos
                             MessageBox.Show("Usuario y/o contraseña incorrecta. Acceso denegado");
                             if (intentos == 2) // si es mas de 2 cierra el formulario
                             {

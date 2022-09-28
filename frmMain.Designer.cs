@@ -90,6 +90,7 @@
             // 
             // LstModulo
             // 
+            this.LstModulo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.LstModulo.Enabled = false;
             this.LstModulo.FormattingEnabled = true;
             this.LstModulo.Items.AddRange(new object[] {
@@ -105,6 +106,7 @@
             // 
             // btnAceptar
             // 
+            this.btnAceptar.Enabled = false;
             this.btnAceptar.Location = new System.Drawing.Point(483, 93);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(75, 23);
