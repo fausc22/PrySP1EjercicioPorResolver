@@ -19,7 +19,12 @@ namespace SP1EjercicioPorResolver
 
         private void btnAceptar2_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide(); //oculta el formulario
+            frmMain f = new frmMain(); //crea el formulario
+            f.Text = lblLogo.Text;
+            f.ShowDialog();
+            this.Show();
+        
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace SP1EjercicioPorResolver
 {
-    partial class frmLogin
+    partial class frmMain
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -86,11 +86,17 @@
             this.txtContrasenia.PasswordChar = '#';
             this.txtContrasenia.Size = new System.Drawing.Size(100, 20);
             this.txtContrasenia.TabIndex = 4;
+            this.txtContrasenia.TextChanged += new System.EventHandler(this.txtContrasenia_TextChanged);
             // 
             // LstModulo
             // 
             this.LstModulo.Enabled = false;
             this.LstModulo.FormattingEnabled = true;
+            this.LstModulo.Items.AddRange(new object[] {
+            "ADM",
+            "SIST",
+            "VTA",
+            "COM"});
             this.LstModulo.Location = new System.Drawing.Point(263, 212);
             this.LstModulo.Name = "LstModulo";
             this.LstModulo.Size = new System.Drawing.Size(121, 21);
@@ -117,7 +123,7 @@
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
-            // frmLogin
+            // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -130,7 +136,7 @@
             this.Controls.Add(this.lblModulo);
             this.Controls.Add(this.lblContrasnia);
             this.Controls.Add(this.LblUsuario);
-            this.Name = "frmLogin";
+            this.Name = "frmMain";
             this.Text = "Login";
             this.ResumeLayout(false);
             this.PerformLayout();

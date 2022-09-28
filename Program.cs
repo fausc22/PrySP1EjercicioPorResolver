@@ -16,7 +16,7 @@ namespace SP1EjercicioPorResolver
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmLogin());
+            Application.Run(new frmInicio());
         }
     }
 }
